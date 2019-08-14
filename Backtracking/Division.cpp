@@ -19,12 +19,8 @@ void division(int index, int sum, int res[]) {
     else if(sum > n) return;
 
     // recursive
-    for(int i = n-1;i>0;i--) {
-        bool isPossible = true;
-        for(int j = 0;j<index;j++) {
-            if(res[j] < i) isPossible = false;
-        }
-        if(!isPossible) continue;
+    for(int i = n - index;i>0;i--) {
+
         res[index] = i;
         sum += i;
         division(index + 1, sum, res);
