@@ -55,7 +55,7 @@ int main(void)
         }
 
         int maxCnt = 0;
-        for(int k = 1;k<=maxFlavor;k++) {
+        for(int k = 0;k<=maxFlavor;k++) {
             int cot = 0;
             memset(check, 0, sizeof(check));
             for (int i = 0; i < n; i++) {
